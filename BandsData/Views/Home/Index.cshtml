@@ -1,8 +1,36 @@
-﻿@{
+﻿@model Band
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bands Data</h1>
 </div>
+<table border = "2">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Members</th>
+            <th>Founded</th>
+            <th>Origin</th>
+            <th>Genre</th>
+            <th>Noteable Works</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var band in ViewBag.bands){
+        <tr>
+            <td>@band.name</td>
+            <td>@band.members</td>
+            <td>@band.founded</td>
+            <td>@band.origin</td>
+            <td>@band.genre</td>
+            <td>@band.notableWorks</td>
+                
+        </tr>
+        }
+    </tbody>
+</table>
