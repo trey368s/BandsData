@@ -11,15 +11,23 @@ namespace BandsData.Controllers
 {
     public class HomeController : Controller
     {
+        private BandContext context { get; set; }
+
+        public HomeController(BandContext ctx)
+        {
+            context = ctx;  
+        }
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
+            ViewBag.bands = context.Bands.ToList();
             return View();
         }
 
