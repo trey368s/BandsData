@@ -1,0 +1,14 @@
+﻿@model Band
+
+<h1>Band Editor</h1>
+
+<form asp-action="Index" method="post">
+    <input type="hidden" asp-for="BandId" />
+    <label asp-for="name">Name:</label><input asp-for="name" /><br />
+    <label asp-for="members">Members:</label><input asp-for="members" /><br />
+    <label asp-for="founded">Founded:</label><input asp-for="founded" /><br />
+    <label asp-for="origin">Origin:</label><input asp-for="origin" /><br />
+    <label asp-for="genre">Genre:</label><input asp-for="genre" /><br />
+    <label asp-for="notableWorks">Noteable Works:</label><input asp-for="notableWorks" /><br />
+    <button type = "submit">@ViewBag.button</button>
+</form>

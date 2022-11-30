@@ -25,6 +25,47 @@ namespace BandsData.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            if (id > 0)
+            {
+                var band = context.Bands.Find(id);
+                ViewBag.button = "Save";
+                return View(band);
+            }
+            ViewBag.button = "Add";
+            return View(new Band());
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var band = context.Bands.Find(id);
+            context.Bands.Remove(band); 
+            context.SaveChanges();
+            ViewBag.bands = context.Bands.ToList();
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult Index(Band model)
+        {
+            if (model.BandId > 0)
+            {
+                context.Bands.Update(model);
+                context.SaveChanges();
+            }
+            else
+            {
+                context.Bands.Add(model);
+                context.SaveChanges();
+            }
+
+            ViewBag.bands = context.Bands.ToList();
+            return View();
+        }
+
         public IActionResult PinkFloyd()
         {
             return View();
