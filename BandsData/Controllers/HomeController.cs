@@ -34,6 +34,14 @@ namespace BandsData.Controllers
         {
             return View();
         }
+        public IActionResult AliceInChains()
+        {
+            return View();
+        }
+        public IActionResult Yes()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

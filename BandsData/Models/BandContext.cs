@@ -33,6 +33,26 @@ namespace BandsData.Models
                     origin = "London, England",
                     genre = "Hard Rock",
                     notableWorks = "Stairway to Heaven, Immigrant Song, Kashmir"
+                },
+                new Band
+                {
+                    BandId = 3,
+                    name = "Alice In Chains",
+                    members = "Jerry Cantrell, Sean Kinney, Mike Inez, William DuVall",
+                    founded = 1987,
+                    origin = "Seattle, Washington",
+                    genre = "Grunge",
+                    notableWorks = "Down In A Hole, I Stay Away, Rotten Apple"
+                },
+                new Band
+                {
+                    BandId = 4,
+                    name = "Yes",
+                    members = "Steve Howe, Geoff Downes, Billy Sherwood, Jon Davison",
+                    founded = 1968,
+                    origin = "London, England",
+                    genre = "Progressive Rock",
+                    notableWorks = "Roundabout, Owner Of A Lonley Heart, Starship Trooper"
                 }
             );
         }

@@ -29,7 +29,8 @@
             <td>@band.origin</td>
             <td>@band.genre</td>
             <td>@band.notableWorks</td>
-                
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-id="@band.BandId">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-id="@band.BandId">Delete</a></td>    
         </tr>
         }
     </tbody>
