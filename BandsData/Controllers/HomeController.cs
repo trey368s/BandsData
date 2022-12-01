@@ -92,8 +92,8 @@ namespace BandsData.Controllers
 
         public IActionResult Details(int id) 
         {
-            
-            return View();
+            var band = context.Bands.Find(id);
+            return View(band);
         }
     }
 }

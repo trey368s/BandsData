@@ -1,14 +1,12 @@
-﻿@model BandsData.Models.Band
+﻿@model Band
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>@Model.name</h1>
 
 <div>
-    <h4>Band</h4>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.name)
