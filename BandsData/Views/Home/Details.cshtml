@@ -1,0 +1,54 @@
+﻿@model BandsData.Models.Band
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Band</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.members)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.members)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.founded)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.founded)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.origin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.genre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.genre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.notableWorks)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.notableWorks)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BandId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
