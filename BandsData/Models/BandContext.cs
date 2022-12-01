@@ -37,12 +37,12 @@ namespace BandsData.Models
                 new Band
                 {
                     BandId = 3,
-                    name = "Alice In Chains",
-                    members = "Jerry Cantrell, Sean Kinney, Mike Inez, William DuVall",
-                    founded = 1987,
-                    origin = "Seattle, Washington",
-                    genre = "Grunge",
-                    notableWorks = "Down In A Hole, I Stay Away, Rotten Apple"
+                    name = "The All-American Rejects",
+                    members = "Tyson Ritter, Nick Wheeler, Mike Kennerty, Chris Gaylor",
+                    founded = 1999,
+                    origin = "Stillwater, Oklahoma",
+                    genre = "Alternative Rock",
+                    notableWorks = "Gives You Hell, My Paper Heart, Dirty Little Secret"
                 },
                 new Band
                 {
@@ -53,16 +53,6 @@ namespace BandsData.Models
                     origin = "London, England",
                     genre = "Progressive Rock",
                     notableWorks = "Roundabout, Owner Of A Lonley Heart, Starship Trooper"
-                },
-                new Band
-                {
-                    BandId = 5,
-                    name = "The All-American Rejects",
-                    members = "Tyson Ritter, Nick Wheeler, Mike Kennerty, Chris Gaylor",
-                    founded = 1999,
-                    origin = "Stillwater, Oklahoma",
-                    genre = "Alternative Rock",
-                    notableWorks = "Gives You Hell, My Paper Heart, Dirty Little Secret"
                 }
             );
         }

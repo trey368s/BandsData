@@ -68,24 +68,20 @@ namespace BandsData.Controllers
 
         public IActionResult PinkFloyd()
         {
-            return View();
+            return Redirect("~/Home/Details/1");
         }
 
         public IActionResult LedZeppelin()
         {
-            return View();
-        }
-        public IActionResult AliceInChains()
-        {
-            return View();
+            return Redirect("~/Home/Details/2");
         }
         public IActionResult Yes()
         {
-            return View();
+            return Redirect("~/Home/Details/4");
         }
         public IActionResult AllAmericanRejects()
         {
-            return View();
+            return Redirect("~/Home/Details/3");
         }
         public IActionResult About()
         {
