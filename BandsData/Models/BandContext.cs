@@ -47,12 +47,12 @@ namespace BandsData.Models
                 new Band
                 {
                     BandId = 4,
-                    name = "Yes",
-                    members = "Steve Howe, Geoff Downes, Billy Sherwood, Jon Davison",
-                    founded = 1968,
-                    origin = "London, England",
-                    genre = "Progressive Rock",
-                    notableWorks = "Roundabout, Owner Of A Lonley Heart, Starship Trooper"
+                    name = "The Strokes",
+                    members = "Julian Casablancas, Nikolai Fraiture, Albert Hammond, Jr. Fabrizio Moretti, Nick Valensi",
+                    founded = 1998,
+                    origin = "New York City, New York",
+                    genre = "Indie Rock",
+                    notableWorks = "The Adults Are Talking, Reptilia, Last Nite"
                 }
             );
         }
